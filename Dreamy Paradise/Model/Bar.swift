@@ -14,6 +14,7 @@ struct Bar: Hashable, Codable{
     var id: Int
     var name: String
     var description: String
+    var address: String
     var type: String
     var timeOpen: String
     var timeClosed: String

@@ -7,7 +7,8 @@
 
 import Foundation
 
-var bars: [Bar] = load("bar.json")
+//var bars: [Bar] = load("bar.json")
+var bars: [Bar] = load("Bar_IOS.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
