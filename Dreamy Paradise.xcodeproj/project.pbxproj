@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF0082862886B3A7004E9D9E /* bar.json in Resources */ = {isa = PBXBuildFile; fileRef = BF0082852886B3A7004E9D9E /* bar.json */; };
 		BF45686C2886E20B00142983 /* BarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45686B2886E20B00142983 /* BarInfo.swift */; };
-		BF45686E2886E9F400142983 /* Bar_IOS.json in Resources */ = {isa = PBXBuildFile; fileRef = BF45686D2886E9F400142983 /* Bar_IOS.json */; };
+		BF4568702886ED6E00142983 /* BarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45686F2886ED6E00142983 /* BarList.swift */; };
+		BF4568742886F29F00142983 /* Bar_IOS.json in Resources */ = {isa = PBXBuildFile; fileRef = BF4568732886F29F00142983 /* Bar_IOS.json */; };
 		BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */; };
 		BFE1B8932886B0690006B8F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8922886B0690006B8F2 /* ContentView.swift */; };
 		BFE1B8952886B06A0006B8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE1B8942886B06A0006B8F2 /* Assets.xcassets */; };
@@ -24,7 +25,8 @@
 /* Begin PBXFileReference section */
 		BF0082852886B3A7004E9D9E /* bar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = bar.json; path = "../../../../Dreamy Paradise Test/Dreamy-Paradise/Resources/bar.json"; sourceTree = "<group>"; };
 		BF45686B2886E20B00142983 /* BarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarInfo.swift; sourceTree = "<group>"; };
-		BF45686D2886E9F400142983 /* Bar_IOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Bar_IOS.json; path = ../../../../../Downloads/Bar_IOS.json; sourceTree = "<group>"; };
+		BF45686F2886ED6E00142983 /* BarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarList.swift; sourceTree = "<group>"; };
+		BF4568732886F29F00142983 /* Bar_IOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bar_IOS.json; sourceTree = "<group>"; };
 		BFE1B88D2886B0690006B8F2 /* Dreamy Paradise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dreamy Paradise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamy_ParadiseApp.swift; sourceTree = "<group>"; };
 		BFE1B8922886B0690006B8F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				BFE1B8922886B0690006B8F2 /* ContentView.swift */,
 				BFE1B8BF2886B33D0006B8F2 /* MapView.swift */,
 				BF45686B2886E20B00142983 /* BarInfo.swift */,
+				BF45686F2886ED6E00142983 /* BarList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,7 +112,7 @@
 		BFE1B8C12886B3820006B8F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BF45686D2886E9F400142983 /* Bar_IOS.json */,
+				BF4568732886F29F00142983 /* Bar_IOS.json */,
 				BF0082852886B3A7004E9D9E /* bar.json */,
 			);
 			path = Resources;
@@ -176,7 +179,7 @@
 				BFE1B8982886B06A0006B8F2 /* Preview Assets.xcassets in Resources */,
 				BFE1B8952886B06A0006B8F2 /* Assets.xcassets in Resources */,
 				BF0082862886B3A7004E9D9E /* bar.json in Resources */,
-				BF45686E2886E9F400142983 /* Bar_IOS.json in Resources */,
+				BF4568742886F29F00142983 /* Bar_IOS.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +197,7 @@
 				BFE1B8BC2886B2C10006B8F2 /* BarRow.swift in Sources */,
 				BFE1B8B72886B1960006B8F2 /* Bar.swift in Sources */,
 				BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */,
+				BF4568702886ED6E00142983 /* BarList.swift in Sources */,
 				BFE1B8BE2886B2E70006B8F2 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

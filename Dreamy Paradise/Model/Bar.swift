@@ -9,9 +9,10 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Bar: Hashable, Codable{
+struct Bar: Hashable, Codable, Identifiable{
     
-    var id: Int
+//    var id = UUID()
+    var id : Int
     var name: String
     var description: String
     var address: String
