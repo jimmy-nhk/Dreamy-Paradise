@@ -1,9 +1,15 @@
-//
-//  Bar.swift
-//  Dreamy Paradise
-//
-//  Created by Jimmy on 18/07/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Nguyen Hoang Khang
+  ID: s3802040
+  Created  date:  18/07/2022
+  Acknowledgement: Acknowledge the resources that you use here.
+ - Apple Developer
+ - Tutorial from IOS Development course.
+*/
 
 import Foundation
 import SwiftUI
@@ -28,15 +34,37 @@ struct Bar: Hashable, Codable, Identifiable{
         Image(imageName)
     }
     
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: Double(latitude)!,longitude: Double(longitude)!)
+    var latitudeConverted: Double{
+        return(LatLongConvert(stringNeedConvert: latitude, index: 2))
     }
     
-    struct Coordinates: Hashable, Codable{
-        var latitude: Double
-        var longitude: Double
+    var longitudeConverted: Double{
+        return(LatLongConvert(stringNeedConvert: longitude, index: 3))
     }
+    
+    func LatLongConvert(stringNeedConvert: String, index: Int) -> Double {
+        let dotChar: Character = "."
+        
+        let latArr = latitude.components(separatedBy: ".")
+
+        var joinedLat = latArr.joined(separator: "")
+        let i = joinedLat.index(joinedLat.startIndex, offsetBy: index)
+        joinedLat.insert(dotChar, at: i)
+        let result = Double(joinedLat)
+        
+        if  result != nil {
+            return result ?? 0.0
+        }else{
+            return 0.0
+        }
+    }
+    
+    var locationCoordinate: CLLocationCoordinate2D {
+        
+        CLLocationCoordinate2D(
+            latitude: latitudeConverted,longitude: longitudeConverted)
+    }
+    
     
 
 }

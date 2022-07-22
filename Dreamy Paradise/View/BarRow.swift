@@ -1,8 +1,14 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A single row to be displayed in a list of bars.
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Nguyen Hoang Khang
+  ID: s3802040
+  Created  date:  18/07/2022
+  Acknowledgement: Acknowledge the resources that you use here.
+ - Apple Developer
+ - Tutorial from IOS Development course.
 */
 
 import SwiftUI
@@ -16,8 +22,10 @@ struct BarRow: View {
                 .resizable()
                 .frame(width: 50, height: 50)
             Text(bar.name)
-
             Spacer()
+            
+
+
         }
     }
 }
