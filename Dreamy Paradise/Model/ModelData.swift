@@ -13,8 +13,12 @@
 
 import Foundation
 
-//var bars: [Bar] = load("bar.json")
-var bars: [Bar] = load("Bar_IOS.json")
+final class ModelData: ObservableObject {
+    //var bars: [Bar] = load("bar.json")
+    @Published var bars: [Bar] = load("Bar_IOS_final.json")
+}
+
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

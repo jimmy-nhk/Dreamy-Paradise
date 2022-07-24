@@ -24,6 +24,10 @@ struct BarRow: View {
             Text(bar.name)
             Spacer()
             
+            if bar.isFavourite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
 
 
         }
@@ -31,7 +35,10 @@ struct BarRow: View {
 }
 
 struct BarRow_Previews: PreviewProvider {
+    static var bars = ModelData().bars
+
     static var previews: some View {
+        
         Group {
             BarRow(bar: bars[0])
             BarRow(bar: bars[1])

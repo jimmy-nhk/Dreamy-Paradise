@@ -21,6 +21,8 @@
 		BFE1B8BE2886B2E70006B8F2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */; };
 		BFE1B8C02886B33D0006B8F2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8BF2886B33D0006B8F2 /* MapView.swift */; };
 		BFE45BFE288A495A00109CBC /* TestFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE45BFD288A495A00109CBC /* TestFunction.swift */; };
+		BFF7DB3F288CF2680090CA4A /* Bar_IOS_final.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF7DB3E288CF2680090CA4A /* Bar_IOS_final.json */; };
+		BFF7DB41288CFA070090CA4A /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7DB40288CFA070090CA4A /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BFE1B8BF2886B33D0006B8F2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BFE45BFD288A495A00109CBC /* TestFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFunction.swift; sourceTree = "<group>"; };
+		BFF7DB3E288CF2680090CA4A /* Bar_IOS_final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bar_IOS_final.json; sourceTree = "<group>"; };
+		BFF7DB40288CFA070090CA4A /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,9 @@
 		BFE1B8BA2886B2A10006B8F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BFE1B8BB2886B2C10006B8F2 /* BarRow.swift */,
-				BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */,
 				BFE1B8922886B0690006B8F2 /* ContentView.swift */,
-				BFE1B8BF2886B33D0006B8F2 /* MapView.swift */,
-				BF45686B2886E20B00142983 /* BarInfo.swift */,
-				BF45686F2886ED6E00142983 /* BarList.swift */,
+				BFF7DB43288CFAFC0090CA4A /* Helpers */,
+				BFF7DB42288CFAE80090CA4A /* Bars */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,9 +117,30 @@
 		BFE1B8C12886B3820006B8F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BFF7DB3E288CF2680090CA4A /* Bar_IOS_final.json */,
 				BF4568732886F29F00142983 /* Bar_IOS.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BFF7DB42288CFAE80090CA4A /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				BF45686B2886E20B00142983 /* BarInfo.swift */,
+				BF45686F2886ED6E00142983 /* BarList.swift */,
+				BFE1B8BB2886B2C10006B8F2 /* BarRow.swift */,
+			);
+			path = Bars;
+			sourceTree = "<group>";
+		};
+		BFF7DB43288CFAFC0090CA4A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */,
+				BFE1B8BF2886B33D0006B8F2 /* MapView.swift */,
+				BFF7DB40288CFA070090CA4A /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +203,7 @@
 			files = (
 				BFE1B8982886B06A0006B8F2 /* Preview Assets.xcassets in Resources */,
 				BFE1B8952886B06A0006B8F2 /* Assets.xcassets in Resources */,
+				BFF7DB3F288CF2680090CA4A /* Bar_IOS_final.json in Resources */,
 				BF4568742886F29F00142983 /* Bar_IOS.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +218,7 @@
 				BFE1B8C02886B33D0006B8F2 /* MapView.swift in Sources */,
 				BF45686C2886E20B00142983 /* BarInfo.swift in Sources */,
 				BFE1B8932886B0690006B8F2 /* ContentView.swift in Sources */,
+				BFF7DB41288CFA070090CA4A /* FavoriteButton.swift in Sources */,
 				BFE1B8B92886B2920006B8F2 /* ModelData.swift in Sources */,
 				BFE1B8BC2886B2C10006B8F2 /* BarRow.swift in Sources */,
 				BFE45BFE288A495A00109CBC /* TestFunction.swift in Sources */,

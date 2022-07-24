@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Dreamy_ParadiseApp: App {
+    
+//    StateObject is used to initialize a model object for a given property only once during the life time of the app (Dreamy Paradise App in the case).
+    
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }

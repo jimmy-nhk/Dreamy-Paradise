@@ -86,6 +86,8 @@ struct TestFunction: View {
 }
 
 struct TestFunction_Previews: PreviewProvider {
+    static var bars = ModelData().bars
+
     static var previews: some View {
         
         Group {

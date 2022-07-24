@@ -29,10 +29,13 @@ struct Bar: Hashable, Codable, Identifiable{
     var longitude: String
     var web: String
     var imageName: String
+    var isFavourite: Bool
     
     var image: Image{
         Image(imageName)
     }
+    
+    
     
     var latitudeConverted: Double{
         return(LatLongConvert(stringNeedConvert: latitude, index: 2))

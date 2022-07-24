@@ -60,6 +60,6 @@ struct MapView_Previews: PreviewProvider {
 //            CLLocationCoordinate2D(
 //                latitude: 10    ,longitude: 20)
         
-        MapView(bar: bars[1])
+        MapView(bar: ModelData().bars[1])
     }
 }
