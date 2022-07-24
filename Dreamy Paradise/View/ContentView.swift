@@ -14,8 +14,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .featured
+
+    enum Tab {
+        case featured
+        case barList
+    }
+    
     var body: some View {
-        BarList()
+        TabView(selection: $selection, content: {
+            
+            BarCategoryHome().tabItem({
+                Label("Featured", systemImage: "star")
+            }).tag(Tab.featured)
+            
+            BarList().tabItem({
+                Label("List", systemImage: "list.dash")
+            }).tag(Tab.barList)
+
+        })
     }
 }
 

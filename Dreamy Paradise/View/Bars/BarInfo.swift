@@ -24,7 +24,6 @@ struct BarInfo: View {
                     
                     
                     CircleImage(image: bar.image)
-                        .offset(y: -20)
                     
                     // VStack
                     VStack(alignment:.leading) {
@@ -38,17 +37,25 @@ struct BarInfo: View {
                         }
                         
                         // Address and type
-                        HStack {
-                            Text("\(bar.address)")
-                                .font(.subheadline)
-                            Spacer()
-                            Text(bar.type)
-                                .font(.subheadline)
-                        }
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .padding([.top, .bottom], 1)
-                        
+                        GeometryReader {metric in
+                            HStack {
+                                Text("\(bar.address)")
+                                    .font(.subheadline)
+                                    .frame(width: metric.size.width * 0.6,height: metric.size.height * 1.5, alignment: .leading)
+                                    .lineLimit(4)
+                                    
+                                Spacer()
+                                    .frame(width: metric.size.width * 0.2)
+
+                                Text(bar.type.rawValue)
+                                    .font(.subheadline)
+                                    .frame(width: metric.size.width * 0.2, alignment: .trailing)
+                            }
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                        }.frame( height: 40)
+                            .padding([.bottom], 20)
+
                         // web and time
                         HStack {
                             Text("\(bar.web)")
@@ -101,7 +108,6 @@ struct BarInfo: View {
                         
                     }
                     .padding(15.0)
-                    .offset(y: -20)
                     .ignoresSafeArea( edges: .bottom)
                     
                     

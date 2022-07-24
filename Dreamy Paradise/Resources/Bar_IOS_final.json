@@ -3,7 +3,7 @@
    "id": 1,
    "name": "The Locus",
    "address": "62 Đ. Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh 700000, Việt Nam",
-   "description": "“𝐋𝐨𝐜𝐮𝐬” trong Latin cổ là từ chỉ địa điểm, vị trí. \nNhưng với 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬bạn không chỉ biết đến là một địa điểm tại 𝑺𝒂̀𝒊𝑮𝒐̀𝒏 mà còn là nơi xoa dịu tâm hồn. Từ không gian có ánh đèn vàng dịu nhẹ, bức tường sẫm tối đến nội thất cổ điển là sự kết hợp hoàn hảo để mang đến cảm giác ấm áp, riêng tư giúp bạn thư giãn trong thế giới của riêng mình. Cùng với không gian ấy là những ly 𝒄𝒐𝒄𝒌𝒕𝒂𝒊𝒍𝒔tuyệt vời có nhiều hương vị khác nhau đều hội tụ ở 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬 . \n𝐋𝐨𝐜𝐮𝐬 khiến ta vui những ngày rực nắng và an ủi được nỗi buồn khi trời vừa đổ cơn mưa. Dù bạn đi chơi với bạn bè hay xả stress sau giờ làm việc thì 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬luôn sẵn sàng là người bạn đồng hành.",
+   "description": "“𝐋𝐨𝐜𝐮𝐬” trong Latin cổ là từ chỉ địa điểm, vị trí. \nNhưng với 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬bạn không chỉ biết đến là một địa điểm tại 𝑺𝒂̀𝒊𝑮𝒐̀𝒏 mà còn là nơi xoa dịu tâm hồn. Từ không gian có ánh đèn vàng dịu nhẹ, bức tường sẫm tối đến nội thất cổ điển là sự kết hợp hoàn hảo để mang đến cảm giác ấm áp, riêng tư giúp bạn thư giãn trong thế giới của riêng mình. Cùng với không gian ấy là những ly 𝒄𝒐𝒄𝒌𝒕𝒂𝒊𝒍𝒔 tuyệt vời có nhiều hương vị khác nhau đều hội tụ ở 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬 . \n𝐋𝐨𝐜𝐮𝐬 khiến ta vui những ngày rực nắng và an ủi được nỗi buồn khi trời vừa đổ cơn mưa. Dù bạn đi chơi với bạn bè hay xả stress sau giờ làm việc thì 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬 luôn sẵn sàng là người bạn đồng hành.",
    "type": "Bar Chill",
    "timeOpen": "18:00",
    "timeClosed": "00:00",
@@ -11,21 +11,23 @@
    "longitude": "1.066.938.431.768.160",
    "web": "https://www.facebook.com/thelocus.1/",
    "imageName": "The Locus",
-   "isFavourite": true
+   "isFavourite": false,
+   "isFeatured": true
  },
  {
    "id": 2,
    "name": "The Locus 2",
    "address": "62 Đ. Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, Thành phố Hồ Chí Minh 700000, Việt Nam",
-   "description": "“𝐋𝐨𝐜𝐮𝐬” trong Latin cổ là từ chỉ địa điểm, vị trí. \nNhưng với 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬bạn không chỉ biết đến là một địa điểm tại 𝑺𝒂̀𝒊𝑮𝒐̀𝒏 mà còn là nơi xoa dịu tâm hồn. Từ không gian có ánh đèn vàng dịu nhẹ, bức tường sẫm tối đến nội thất cổ điển là sự kết hợp hoàn hảo để mang đến cảm giác ấm áp, riêng tư giúp bạn thư giãn trong thế giới của riêng mình. Cùng với không gian ấy là những ly 𝒄𝒐𝒄𝒌𝒕𝒂𝒊𝒍𝒔tuyệt vời có nhiều hương vị khác nhau đều hội tụ ở 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬 . \n𝐋𝐨𝐜𝐮𝐬 khiến ta vui những ngày rực nắng và an ủi được nỗi buồn khi trời vừa đổ cơn mưa. Dù bạn đi chơi với bạn bè hay xả stress sau giờ làm việc thì 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬luôn sẵn sàng là người bạn đồng hành.",
+   "description": "“𝐋𝐨𝐜𝐮𝐬” trong Latin cổ là từ chỉ địa điểm, vị trí. \nNhưng với 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬bạn không chỉ biết đến là một địa điểm tại 𝑺𝒂̀𝒊𝑮𝒐̀𝒏 mà còn là nơi xoa dịu tâm hồn. Từ không gian có ánh đèn vàng dịu nhẹ, bức tường sẫm tối đến nội thất cổ điển là sự kết hợp hoàn hảo để mang đến cảm giác ấm áp, riêng tư giúp bạn thư giãn trong thế giới của riêng mình. Cùng với không gian ấy là những ly 𝒄𝒐𝒄𝒌𝒕𝒂𝒊𝒍𝒔tuyệt vời có nhiều hương vị khác nhau đều hội tụ ở 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬 . \n𝐋𝐨𝐜𝐮𝐬 khiến ta vui những ngày rực nắng và an ủi được nỗi buồn khi trời vừa đổ cơn mưa. Dù bạn đi chơi với bạn bè hay xả stress sau giờ làm việc thì 𝐓𝐡𝐞 𝐋𝐨𝐜𝐮𝐬 luôn sẵn sàng là người bạn đồng hành.",
    "type": "Bar Chill",
    "timeOpen": "18:00",
    "timeClosed": "00:00",
    "latitude": "10.766.534.516.164.300",
    "longitude": "1.066.938.431.768.160",
    "web": "https://www.facebook.com/thelocus.1/",
-   "imageName": "The Locus 2",
-   "isFavourite": false
+   "imageName": "Bar Image",
+   "isFavourite": false,
+   "isFeatured": true
  },
  {
    "id": 3,
@@ -39,7 +41,8 @@
    "longitude": "10.669.437.769.669.900",
    "web": "https://www.facebook.com/like.chill.saigon",
    "imageName": "https://th.bing.com/th/id/R.4d8de4d1ee3279e187307bfe4a8ae737?rik=j%2b1ywDrNBWpytQ&riu=http%3a%2f%2fwww.asia-bars.com%2fwp-content%2fuploads%2f2016%2f11%2fChill-Skybar-Skybar-Area-14.jpg&ehk=GuhWkk0bV0ubIJrrAWS4FLKHCbgVonGdFTllOEvTsXI%3d&risl=&pid=ImgRaw&r=0",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 4,
@@ -53,7 +56,8 @@
    "longitude": "10.669.066.399.669.900",
    "web": "TNR | Facebook",
    "imageName": "https://scontent.fsgn6-1.fna.fbcdn.net/v/t39.30808-6/249007518_6643633485678737_6087578955564612234_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Qnd-Tkv-hFAAX_NvcGj&_nc_ht=scontent.fsgn6-1.fna&oh=00_AT-6qZ43DslgRDAVTHbip40zp7CYkO8ozwp7dMITFbcXhw&oe=62D9F41B",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 5,
@@ -67,7 +71,8 @@
    "longitude": "10.669.714.829.669.900",
    "web": "AIR Saigon - Feel the air as life in Saigon passes by (air360skylounge.com)",
    "imageName": "https://www.citypassguide.com/media/slideshow/air-360-sky-bar-9.jpg",
-   "isFavourite": true
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 6,
@@ -81,7 +86,8 @@
    "longitude": "10.670.449.721.019.200",
    "web": "Qui Lounge",
    "imageName": "https://quilounge.com/hochiminh/assets/uploads/2016/03/lounge-1-min.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 7,
@@ -95,7 +101,8 @@
    "longitude": "10.669.377.375.437.000",
    "web": "Boheme Sai Gon | Facebook",
    "imageName": "https://scontent.fsgn6-2.fna.fbcdn.net/v/t1.6435-9/131149013_3616113721839372_809518250307485101_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=9MsmnlgNHMkAX_5RqWC&_nc_ht=scontent.fsgn6-2.fna&oh=00_AT93Pz6Uhn4JJMFl_wTLGhF-hYqmA1A4QdrGUPXPFvN84g&oe=62FA60BC",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 8,
@@ -109,7 +116,8 @@
    "longitude": "1.066.867.364.236.860",
    "web": "Canalis Club | Facebook",
    "imageName": "https://haku.vn/wp-content/uploads/2020/07/Canalis-Club-8.jpg",
-   "isFavourite": true
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 9,
@@ -123,7 +131,8 @@
    "longitude": "1.067.047.598.255.350",
    "web": "Carmen Bar (carmensaigon.com)",
    "imageName": "https://carmensaigon.com//admin/webroot/upload/image/images/service/_MG_2029-min.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 10,
@@ -137,7 +146,8 @@
    "longitude": "10.669.832.431.019.200",
    "web": "Glow Skybar | Facebook",
    "imageName": "https://vietnamnightlife.com/uploads/images/2020/01/1580488963-multi_product20-skyloftbyglowoverview4.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 11,
@@ -151,7 +161,8 @@
    "longitude": "10.669.099.625.437.000",
    "web": "Zahrah Coffee Lounge & Rooftop | Facebook",
    "imageName": "https://scontent.fsgn12-1.fna.fbcdn.net/v/t1.6435-9/173138890_2886767204974171_5623886451960378020_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=2xxkD_GUlHoAX_Poo4W&_nc_ht=scontent.fsgn12-1.fna&oh=00_AT_muShqKtD_051wK-X_Ov5Dq78hbWsijpgo6Rt9WmD1xA&oe=62FCA059",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 12,
@@ -165,7 +176,8 @@
    "longitude": "1.067.021.212.966.990",
    "web": "Zion Sky Lounge & Dining | Facebook",
    "imageName": "https://assets-global.website-files.com/5d2bf8a79ea87f739d0d24c8/5ff4337254e45c906b23575e_photo-1-1608804092080641223253.jpeg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 13,
@@ -179,7 +191,8 @@
    "longitude": "10.668.901.008.135.700",
    "web": "PK maltroom | Facebook",
    "imageName": "https://scontent.fsgn6-2.fna.fbcdn.net/v/t39.30808-6/278170680_950839325578315_6792378589285875765_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=jBYCe6FHMi0AX_BM8BQ&_nc_ht=scontent.fsgn6-2.fna&oh=00_AT88inu5buJd_gpWSZ5b4_eUDChAbEuHpjhQTYUGhvheTQ&oe=62DA0FDE",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 14,
@@ -193,7 +206,8 @@
    "longitude": "10.669.763.931.204.100",
    "web": "HOME | Rabbit Hole Bar",
    "imageName": "https://img.vietcetera.com/uploads/images/18-nov-2020/bar-4-768x512.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 15,
@@ -207,7 +221,8 @@
    "longitude": "10.670.352.799.669.900",
    "web": "The Iron Bank - Cocktail Vault | Facebook",
    "imageName": "https://img.vietcetera.com/uploads/images/18-nov-2020/bar-6-768x512.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 16,
@@ -221,7 +236,8 @@
    "longitude": "10.670.376.151.019.200",
    "web": "Saigon Saigon Rooftop Bar | Facebook",
    "imageName": "https://scontent.fsgn12-1.fna.fbcdn.net/v/t39.30808-6/278665541_2584575665005961_3061854394398892274_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=E8F0d421t1kAX9EASpl&_nc_ht=scontent.fsgn12-1.fna&oh=00_AT9F_y3TokoCDR66_05a5ZjCD78H17TvVYvx-TkfZgqgJA&oe=62DB329B",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 17,
@@ -235,7 +251,8 @@
    "longitude": "106.692.705.910.193",
    "web": "POC POC Beer Garden | Facebook",
    "imageName": "https://scontent.fsgn6-2.fna.fbcdn.net/v/t39.30808-6/292594881_2176681789169435_1957559739907323598_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GzdgjXH1Gg0AX82eQKC&_nc_ht=scontent.fsgn6-2.fna&oh=00_AT8oGrNtmqY2t4g3hEZ2dqe3CQpdKcPfUhQBSCl6XzsTCw&oe=62DA55E0",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 18,
@@ -249,7 +266,8 @@
    "longitude": "10.670.338.534.087.700",
    "web": "Stylish Bar in Ho Chi Minh | 2 Lam Son Bar at Park Hyatt Saigon (hyattrestaurants.com)",
    "imageName": "https://toplist.vn/images/800px/martini-bar-park-hyatt-saigon-hotel-626220.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 19,
@@ -263,7 +281,8 @@
    "longitude": "10.668.923.456.601.500",
    "web": "The Gin House | Facebook",
    "imageName": "https://toplist.vn/images/800px/the-gin-house-626226.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  },
  {
    "id": 20,
@@ -277,6 +296,7 @@
    "longitude": "10.670.436.373.717.900",
    "web": "https://www.facebook.com/drinking.n.healing",
    "imageName": "https://toplist.vn/images/800px/drinking-amp-healing-626223.jpg",
-   "isFavourite": false
+   "isFavourite": false,
+   "isFeatured": false
  }
 ]

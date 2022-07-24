@@ -36,11 +36,10 @@ struct MapView: View {
         
         Map(coordinateRegion: $mapModel.region,showsUserLocation: true,annotationItems: bars){
             MapMarker(coordinate: $0.locationCoordinate, tint: Color(.systemMint))
-        }.ignoresSafeArea(.all)
+        }
             .accentColor(Color(.systemRed))
             .onAppear{
                 mapModel.checkIfLocationServicesIsEnable()
-
             }
         
 

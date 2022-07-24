@@ -16,6 +16,17 @@ import SwiftUI
 let widthFrame:Double = 440;
 let heightFrame:Double = 410;
 
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
 struct CircleImage: View {
     var image: Image
     
@@ -24,8 +35,7 @@ struct CircleImage: View {
 
         image
             .resizable()
-            .clipShape(Rectangle())
-            .cornerRadius(40)
+            .clipShape( RoundedCorner(radius: 40, corners: [.bottomLeft, .bottomRight]) )
             .shadow(color: .gray, radius: 10)
 //                .scaledToFit()
 //                .aspectRatio(contentMode: .fill)
@@ -35,8 +45,10 @@ struct CircleImage: View {
 }
 
 struct CircleImage_Previews: PreviewProvider {
+    static let modelData = ModelData()
+
     static var previews: some View {
-        let barModel: Bar = Bar( id: 0, name: "The Locus", description: "Descriptive text goes hereDescriptive text goes hereDescriptive text goes hereDescriptive text goes scriptive text goes hereDescriptive text goes here \n ereDescripive text goes hereDescriptive text goes here ",address: "Address", type: "Bar Chill", timeOpen: "18:00", timeClosed: "24:00", latitude: "Latitude", longitude: "Longitude", web: "www.thelocus.com.vn", imageName: "The Locus", isFavourite: false)
-        CircleImage(image: barModel.image).previewLayout(.sizeThatFits)
+
+        CircleImage(image: modelData.bars[0].image).previewLayout(.sizeThatFits)
     }
 }

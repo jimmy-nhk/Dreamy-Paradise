@@ -22,7 +22,7 @@ struct Bar: Hashable, Codable, Identifiable{
     var name: String
     var description: String
     var address: String
-    var type: String
+//    var type: String
     var timeOpen: String
     var timeClosed: String
     var latitude: String
@@ -30,12 +30,19 @@ struct Bar: Hashable, Codable, Identifiable{
     var web: String
     var imageName: String
     var isFavourite: Bool
+    var isFeatured: Bool
+    
+    var type: Category
+    enum Category: String, CaseIterable, Codable {
+        case bar = "Bar"
+        case barChill = "Bar Chill"
+        case skyBar = "Sky Bar"
+        case lounge = "Lounge"
+    }
     
     var image: Image{
         Image(imageName)
     }
-    
-    
     
     var latitudeConverted: Double{
         return(LatLongConvert(stringNeedConvert: latitude, index: 2))

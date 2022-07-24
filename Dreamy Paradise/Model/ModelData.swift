@@ -16,6 +16,16 @@ import Foundation
 final class ModelData: ObservableObject {
     //var bars: [Bar] = load("bar.json")
     @Published var bars: [Bar] = load("Bar_IOS_final.json")
+    
+    var features: [Bar]{
+        bars.filter{$0.isFeatured}
+    }
+    
+    var types: [String: [Bar]] {
+        Dictionary(
+            grouping: bars, by: {$0.type.rawValue}
+        )
+    }
 }
 
 
