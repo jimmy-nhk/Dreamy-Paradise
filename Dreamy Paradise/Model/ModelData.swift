@@ -12,6 +12,7 @@
 */
 
 import Foundation
+import SwiftUI
 
 final class ModelData: ObservableObject {
     //var bars: [Bar] = load("bar.json")
@@ -26,6 +27,34 @@ final class ModelData: ObservableObject {
             grouping: bars, by: {$0.type.rawValue}
         )
     }
+    
+    var featuredImageTypeDict: [FeatureObject] {
+
+        let arrayBarTypes = types.keys
+        
+        var arrayImage: [FeatureObject] = []
+        
+//        var description = ["Hello", ""]
+        
+        for barType in (arrayBarTypes) {
+            let featureObject = FeatureObject(imageType: barType + " Feature", typeName: barType, typeDescription: barType)
+            arrayImage.append(featureObject)
+        }
+        
+        return arrayImage
+    }
+}
+
+struct FeatureObject {
+    
+    var imageType: String
+    var typeName: String
+    var typeDescription: String
+    
+    var image: Image{
+        Image(imageType)
+    }
+
 }
 
 

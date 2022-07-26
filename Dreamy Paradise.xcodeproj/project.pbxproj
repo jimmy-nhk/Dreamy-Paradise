@@ -10,6 +10,9 @@
 		BF45686C2886E20B00142983 /* BarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45686B2886E20B00142983 /* BarInfo.swift */; };
 		BF4568702886ED6E00142983 /* BarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45686F2886ED6E00142983 /* BarList.swift */; };
 		BF4568742886F29F00142983 /* Bar_IOS.json in Resources */ = {isa = PBXBuildFile; fileRef = BF4568732886F29F00142983 /* Bar_IOS.json */; };
+		BF56AB73288F8BB3008D7362 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56AB72288F8BB3008D7362 /* PageViewController.swift */; };
+		BF56AB75288F8F7A008D7362 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56AB74288F8F7A008D7362 /* FeatureCard.swift */; };
+		BFA4FD232890163700D175FE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4FD222890163700D175FE /* PageView.swift */; };
 		BFB909C1288ADBFD0003EB9B /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB909C0288ADBFD0003EB9B /* MapModel.swift */; };
 		BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */; };
 		BFE1B8932886B0690006B8F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8922886B0690006B8F2 /* ContentView.swift */; };
@@ -32,6 +35,9 @@
 		BF45686B2886E20B00142983 /* BarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarInfo.swift; sourceTree = "<group>"; };
 		BF45686F2886ED6E00142983 /* BarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarList.swift; sourceTree = "<group>"; };
 		BF4568732886F29F00142983 /* Bar_IOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bar_IOS.json; sourceTree = "<group>"; };
+		BF56AB72288F8BB3008D7362 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		BF56AB74288F8F7A008D7362 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		BFA4FD222890163700D175FE /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		BFB909C0288ADBFD0003EB9B /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		BFE1B88D2886B0690006B8F2 /* Dreamy Paradise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dreamy Paradise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamy_ParadiseApp.swift; sourceTree = "<group>"; };
@@ -62,6 +68,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF56AB71288F8B9A008D7362 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				BF56AB72288F8BB3008D7362 /* PageViewController.swift */,
+				BF56AB74288F8F7A008D7362 /* FeatureCard.swift */,
+				BFA4FD222890163700D175FE /* PageView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 		BFE1B8842886B0690006B8F2 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE1B8922886B0690006B8F2 /* ContentView.swift */,
+				BF56AB71288F8B9A008D7362 /* PageView */,
 				BFF099AA288D41D6009093DA /* Categories */,
 				BFF7DB43288CFAFC0090CA4A /* Helpers */,
 				BFF7DB42288CFAE80090CA4A /* Bars */,
@@ -239,6 +256,7 @@
 				BFF099AE288D44AF009093DA /* TypeRow.swift in Sources */,
 				BFE1B8B92886B2920006B8F2 /* ModelData.swift in Sources */,
 				BFE1B8BC2886B2C10006B8F2 /* BarRow.swift in Sources */,
+				BFA4FD232890163700D175FE /* PageView.swift in Sources */,
 				BFF099AC288D4201009093DA /* BarCategoryHome.swift in Sources */,
 				BFE45BFE288A495A00109CBC /* TestFunction.swift in Sources */,
 				BFB909C1288ADBFD0003EB9B /* MapModel.swift in Sources */,
@@ -247,6 +265,8 @@
 				BF4568702886ED6E00142983 /* BarList.swift in Sources */,
 				BFE1B8BE2886B2E70006B8F2 /* CircleImage.swift in Sources */,
 				BFF099B0288D468F009093DA /* TypeItem.swift in Sources */,
+				BF56AB75288F8F7A008D7362 /* FeatureCard.swift in Sources */,
+				BF56AB73288F8BB3008D7362 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,23 +13,19 @@ struct BarCategoryHome: View {
 
     var body: some View {
         NavigationView{
-            List {
-                
-                modelData.features[1].image
-                    .resizable()
-                    .scaledToFit()
-                    .frame( height: 300)
-                    .clipped()
+                List {
+                    PageView(pages: ModelData().featuredImageTypeDict.map { FeatureCard(imageFeature: $0.image, typeName: $0.typeName) })
+                        .aspectRatio(3 / 2, contentMode: .fit)
+                        .listRowInsets(EdgeInsets())
+                    ForEach(modelData.types.keys.sorted(), id: \.self) { key in
+                        TypeRow(typeName: key, items: modelData.types[key]!)
+                    }
                     .listRowInsets(EdgeInsets())
-                
-                ForEach(modelData.types.keys.sorted(), id: \.self) { key in
-                    TypeRow(typeName: key, items: modelData.types[key]!)
-                }
-                .listRowInsets(EdgeInsets())
 
-            }
-            .navigationTitle("Featured")
+                }.navigationTitle("Featured")
+            
         }
+
     }
 }
 
