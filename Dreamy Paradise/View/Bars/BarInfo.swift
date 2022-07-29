@@ -22,7 +22,6 @@ struct BarInfo: View {
                 
                 VStack {
                     
-                    
                     CircleImage(image: bar.image)
                     
                     // VStack
@@ -81,7 +80,8 @@ struct BarInfo: View {
                         
                         
                         // Navigation Link
-                        NavigationLink(destination:  MapView(bar: bar), label: {
+                        NavigationLink(destination:   MapView(bar: bar)
+                                       , label: {
                             ZStack{
                                 Color(.black)
                                 HStack{

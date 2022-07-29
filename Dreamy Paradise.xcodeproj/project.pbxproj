@@ -14,7 +14,7 @@
 		BF56AB75288F8F7A008D7362 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56AB74288F8F7A008D7362 /* FeatureCard.swift */; };
 		BF9141F32891272A0047F328 /* Bar_IOS_final.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9141F22891272A0047F328 /* Bar_IOS_final.json */; };
 		BFA4FD232890163700D175FE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4FD222890163700D175FE /* PageView.swift */; };
-		BFB909C1288ADBFD0003EB9B /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB909C0288ADBFD0003EB9B /* MapModel.swift */; };
+		BFCC17D228938A8100618759 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC17D128938A8100618759 /* SplashView.swift */; };
 		BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */; };
 		BFE1B8932886B0690006B8F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8922886B0690006B8F2 /* ContentView.swift */; };
 		BFE1B8952886B06A0006B8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE1B8942886B06A0006B8F2 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		BF56AB74288F8F7A008D7362 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		BF9141F22891272A0047F328 /* Bar_IOS_final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Bar_IOS_final.json; path = ../../../../../Downloads/Bar_IOS_final.json; sourceTree = "<group>"; };
 		BFA4FD222890163700D175FE /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		BFB909C0288ADBFD0003EB9B /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		BFCC17D128938A8100618759 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		BFE1B88D2886B0690006B8F2 /* Dreamy Paradise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dreamy Paradise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamy_ParadiseApp.swift; sourceTree = "<group>"; };
 		BFE1B8922886B0690006B8F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,7 +121,6 @@
 			children = (
 				BFE1B8B62886B1960006B8F2 /* Bar.swift */,
 				BFE1B8B82886B2920006B8F2 /* ModelData.swift */,
-				BFB909C0288ADBFD0003EB9B /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +172,7 @@
 				BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */,
 				BFE1B8BF2886B33D0006B8F2 /* MapView.swift */,
 				BFF7DB40288CFA070090CA4A /* FavoriteButton.swift */,
+				BFCC17D128938A8100618759 /* SplashView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -259,7 +259,6 @@
 				BFA4FD232890163700D175FE /* PageView.swift in Sources */,
 				BFF099AC288D4201009093DA /* BarCategoryHome.swift in Sources */,
 				BFE45BFE288A495A00109CBC /* TestFunction.swift in Sources */,
-				BFB909C1288ADBFD0003EB9B /* MapModel.swift in Sources */,
 				BFE1B8B72886B1960006B8F2 /* Bar.swift in Sources */,
 				BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */,
 				BF4568702886ED6E00142983 /* BarList.swift in Sources */,
@@ -267,6 +266,7 @@
 				BFF099B0288D468F009093DA /* TypeItem.swift in Sources */,
 				BF56AB75288F8F7A008D7362 /* FeatureCard.swift in Sources */,
 				BF56AB73288F8BB3008D7362 /* PageViewController.swift in Sources */,
+				BFCC17D228938A8100618759 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

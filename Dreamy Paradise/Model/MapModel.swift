@@ -45,8 +45,9 @@ final class MapModel: NSObject, CLLocationManagerDelegate, ObservableObject{
         case .denied:
             print("You have denied this app location permission.")
         case .authorizedAlways, .authorizedWhenInUse:
-            region = MKCoordinateRegion(center: locationManager.location!.coordinate, //center: MapDetails.rmitCoordinates,
-                                        span: MapDetails.defaultSpan)
+            print("You have authorized.")
+//            region = MKCoordinateRegion(center: locationManager.location!.coordinate, //center: MapDetails.rmitCoordinates,
+//                                        span: MapDetails.defaultSpan)
         @unknown default:
             break
         }

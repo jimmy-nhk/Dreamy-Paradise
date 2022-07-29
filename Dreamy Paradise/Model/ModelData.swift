@@ -14,9 +14,28 @@
 import Foundation
 import SwiftUI
 
+var fileName = "Bar_IOS_final"
+
 final class ModelData: ObservableObject {
     //var bars: [Bar] = load("bar.json")
-    @Published var bars: [Bar] = load("Bar_IOS_final.json")
+
+    @Published var bars: [Bar] = load(fileName + ".json")
+    
+    
+    func saveToFile() {
+        do {
+            let furl = try FileManager.default
+                .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+                .appendingPathComponent(fileName)
+                .appendingPathExtension("json")
+            print("---> writing to: \(furl)")
+            let data = try JSONEncoder().encode(bars)
+            try data.write(to: furl)
+        } catch {
+            print("---> error saveToFile: \(error)")
+        }
+    }
+    
     
     var features: [Bar]{
         bars.filter{$0.isFeatured}
@@ -56,6 +75,8 @@ struct FeatureObject {
     }
 
 }
+
+
 
 
 

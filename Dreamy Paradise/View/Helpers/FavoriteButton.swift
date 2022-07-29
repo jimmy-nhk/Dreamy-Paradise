@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct FavoriteButton: View {
+    @EnvironmentObject var modelData: ModelData
+
     @Binding var isSet: Bool
     
     var body: some View {
         Button{
             isSet.toggle()
+            modelData.saveToFile()
         }label: {
             Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
                 .labelStyle(.iconOnly)

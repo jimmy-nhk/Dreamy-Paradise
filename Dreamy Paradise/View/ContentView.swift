@@ -15,24 +15,30 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection: Tab = .featured
-
+    @State private var isActive = false
+    
     enum Tab {
         case featured
         case barList
     }
     
     var body: some View {
-        TabView(selection: $selection, content: {
-            
-            BarCategoryHome().tabItem({
-                Label("Featured", systemImage: "star")
-            }).tag(Tab.featured)
-            
-            BarList().tabItem({
-                Label("List", systemImage: "list.dash")
-            }).tag(Tab.barList)
+        
+        if !isActive{
+            SplashView(isActive: $isActive)
+        }else{
+            TabView(selection: $selection, content: {
+                
+                BarCategoryHome().tabItem({
+                    Label("Featured", systemImage: "star")
+                }).tag(Tab.featured)
+                
+                BarList().tabItem({
+                    Label("List", systemImage: "list.dash")
+                }).tag(Tab.barList)
 
-        })
+            })
+        }
     }
 }
 
