@@ -1,15 +1,15 @@
 /*
-  RMIT University Vietnam
-  Course: COSC2659 iOS Development
-  Semester: 2022B
-  Assessment: Assignment 2
-  Author: Nguyen Hoang Khang
-  ID: s3802040
-  Created  date:  18/07/2022
-  Acknowledgement: Acknowledge the resources that you use here.
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 2
+ Author: Nguyen Hoang Khang
+ ID: s3802040
+ Created  date:  18/07/2022
+ Acknowledgement: Acknowledge the resources that you use here.
  - Apple Developer
  - Tutorial from IOS Development course.
-*/
+ */
 
 import Foundation
 import SwiftUI
@@ -17,12 +17,12 @@ import CoreLocation
 
 struct Bar: Hashable, Codable, Identifiable{
     
-//    var id = UUID()
+    //    var id = UUID()
     var id : Int
     var name: String
     var description: String
     var address: String
-//    var type: String
+    //    var type: String
     var timeOpen: String
     var timeClosed: String
     var latitude: String
@@ -56,7 +56,7 @@ struct Bar: Hashable, Codable, Identifiable{
         let dotChar: Character = "."
         
         let latArr = latitude.components(separatedBy: ".")
-
+        
         var joinedLat = latArr.joined(separator: "")
         let i = joinedLat.index(joinedLat.startIndex, offsetBy: index)
         joinedLat.insert(dotChar, at: i)
@@ -76,5 +76,5 @@ struct Bar: Hashable, Codable, Identifiable{
     }
     
     
-
+    
 }

@@ -20,7 +20,7 @@ struct SplashView: View {
             ZStack {
                 Image("Splash Screen")
                     .resizable()
-                .ignoresSafeArea()
+                    .ignoresSafeArea()
             }.opacity( opacity)
                 .onAppear{
                     withAnimation(.easeIn(duration: 1)){

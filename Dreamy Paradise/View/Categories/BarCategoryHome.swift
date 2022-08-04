@@ -10,22 +10,28 @@ import SwiftUI
 struct BarCategoryHome: View {
     
     @EnvironmentObject var modelData: ModelData
-
+    
     var body: some View {
+        
+    
         NavigationView{
-                List {
-                    PageView(pages: ModelData().featuredImageTypeDict.map { FeatureCard(imageFeature: $0.image, typeName: $0.typeName) })
-                        .aspectRatio(3 / 2, contentMode: .fit)
-                        .listRowInsets(EdgeInsets())
-                    ForEach(modelData.types.keys.sorted(), id: \.self) { key in
-                        TypeRow(typeName: key, items: modelData.types[key]!)
-                    }
+            List {
+                PageView(pages: ModelData().featuredImageTypeDict.map { FeatureCard(imageFeature: $0.image, typeName: $0.typeName) })
+                    .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
-
-                }.navigationTitle("Featured")
+                
+                ForEach(modelData.types.keys.sorted(), id: \.self) { key in
+                    TypeRow(typeName: key, items: modelData.types[key]!)
+                        .listRowInsets(EdgeInsets())
+                }
+                .listRowInsets(EdgeInsets())
+                
+            }.navigationTitle("Featured")
+                .listStyle(PlainListStyle())
             
         }
-
+        
+        
     }
 }
 

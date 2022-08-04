@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoriteButton: View {
     @EnvironmentObject var modelData: ModelData
-
+    
     @Binding var isSet: Bool
     
     var body: some View {

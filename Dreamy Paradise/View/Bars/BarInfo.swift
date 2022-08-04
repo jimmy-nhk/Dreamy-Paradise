@@ -16,25 +16,25 @@ struct BarInfo: View {
     }
     
     var body: some View {
-        ZStack {
-            Color(.white).edgesIgnoringSafeArea(.bottom)
-        ScrollView{
+            ScrollView{
                 
                 VStack {
                     
                     CircleImage(image: bar.image)
+
+                    
                     
                     // VStack
                     VStack(alignment:.leading) {
-                        
-                      // Title
+
+                        // Title
                         HStack {
                             Text(bar.name)
                                 .font(.title)
-                            
+
                             FavoriteButton(isSet: $modelData.bars[barIndex].isFavourite)
                         }
-                        
+
                         // Address and type
                         GeometryReader {metric in
                             HStack {
@@ -42,7 +42,7 @@ struct BarInfo: View {
                                     .font(.subheadline)
                                     .frame(width: metric.size.width * 0.6,height: metric.size.height * 1.5, alignment: .leading)
                                     .lineLimit(4)
-                                    
+
                                 Spacer()
                                     .frame(width: metric.size.width * 0.2)
 
@@ -65,58 +65,57 @@ struct BarInfo: View {
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                        
-                        
+
+
                         //                Divider distinguish the title and detailed description
-                        Divider().frame(width: 400, height: 10)
-                        
-                        
+                        Divider().frame(height: 10)
+
+
                         Text("Description")
                             .font(.title2)
-                        
+
                         Text("\(bar.description)")
                             .padding(.top, 10)
                             .padding(.bottom, 20)
-                        
-                        
-                        // Navigation Link
-                        NavigationLink(destination:   MapView(bar: bar)
-                                       , label: {
-                            ZStack{
-                                Color(.black)
-                                HStack{
-                                    Image(systemName: "map.fill")
-                                        .foregroundStyle(.white)
-                                    
-                                    Text("Mapping".uppercased())
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.white)
-                                }.frame(width: 300, height:50 , alignment: .center)
-                            }.cornerRadius(18)
-                                .frame(width: 200, height:60 )
-                            
-                            
-                            
-                        })
-                        .buttonBorderShape(.roundedRectangle(radius: 20))
-                        .frame(width: 400, height:50 , alignment: .center)                .ignoresSafeArea( edges: .bottom)
-                        .padding(.top, 20)
-                        
-                        
-                        
-                        
+
+
+                        HStack{
+                            Spacer()
+                            // Navigation Link
+                            NavigationLink(destination:   MapView(bar: bar)
+                                           , label: {
+                                ZStack{
+                                    Color(.black)
+                                    HStack{
+                                        Image(systemName: "map.fill")
+                                            .foregroundStyle(.white)
+
+                                        Text("Mapping".uppercased())
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white)
+                                    }.frame(width: 300, height:50 , alignment: .center)
+                                }.cornerRadius(18)
+                                    .frame(width: 200, height:60 )
+                            })
+                            .buttonBorderShape(.roundedRectangle(radius: 20))
+                            .frame(width: .infinity, height:50 , alignment: .center)                .ignoresSafeArea( edges: .bottom)
+                            .padding(.top, 20)
+                            Spacer()
+
+                        }
+
                         
                     }
                     .padding(15.0)
-                    .ignoresSafeArea( edges: .bottom)
+                    
                     
                     
                     
                     
                     Spacer()
                 }
-            }
-        }
+
+            }.ignoresSafeArea( edges: .top)
     }
     
 }
@@ -129,11 +128,12 @@ struct BarInfo_Previews: PreviewProvider {
         
         
         Group {
-            BarInfo(bar: modelData.bars[0])
+            BarInfo(bar: modelData.bars[1])
                 .environmentObject(modelData)
-            
         }
-        .previewLayout(PreviewLayout.sizeThatFits)
+        
+
+//        .previewLayout(PreviewLayout.sizeThatFits)
         
     }
 }

@@ -29,6 +29,7 @@ struct ContentView: View {
         }else{
             TabView(selection: $selection, content: {
                 
+                
                 BarCategoryHome().tabItem({
                     Label("Featured", systemImage: "star")
                 }).tag(Tab.featured)

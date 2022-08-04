@@ -37,7 +37,7 @@ struct TypeRow: View {
 
 struct TypeRow_Previews: PreviewProvider {
     static var bars = ModelData().bars
-
+    
     static var previews: some View {
         TypeRow(
             typeName: bars[0].type.rawValue, items: Array(bars.prefix(5))
