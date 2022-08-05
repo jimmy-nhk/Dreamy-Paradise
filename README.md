@@ -2,7 +2,6 @@
 
 I am a dreamy person who like to immerse myself in beautiful places in Sai Gon. The app is used to store the list of popular bars around the city. It contains the name, address, the time (opens / closes), the description and the bar’s coordinator on the map to that bar as well. Last year, it had been tough since the lockdown was established due to Covid-19. Everyone stayed at home to not spread out the disease. Therefore, I want to make this app as a list of well-known places to chill out so people can drop by during their free time in the evening. To use the app, the user must understand the views of the app.
 
-App icon is as follows:
 App has five views:
 * Splash View (Extra feature) 
 <img src="https://drive.google.com/uc?export=view&id=1QjxwK_IT3BRLnikfQj7WhAa3lOXSjDZm"  width="350" height="600" />
