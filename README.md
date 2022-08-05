@@ -4,7 +4,7 @@ I am a dreamy person who like to immerse myself in beautiful places in Sai Gon. 
 
 App has five views:
 * Splash View (Extra feature) 
-<img src="https://drive.google.com/uc?export=view&id=1QjxwK_IT3BRLnikfQj7WhAa3lOXSjDZm"  width="350" height="600" />
+<img src="https://drive.google.com/uc?export=view&id=1QjxwK_IT3BRLnikfQj7WhAa3lOXSjDZm"  width="350" height="600"/>
 
 First, when the user enters the app, there is a splash screen appearing around 1-2 seconds and navigate to the Home Page.
 In the Home Page, there is a tab component to switch between the Home Page and the List Page.
