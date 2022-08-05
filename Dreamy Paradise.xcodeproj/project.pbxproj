@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		BF45686C2886E20B00142983 /* BarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45686B2886E20B00142983 /* BarInfo.swift */; };
 		BF4568702886ED6E00142983 /* BarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45686F2886ED6E00142983 /* BarList.swift */; };
-		BF4568742886F29F00142983 /* Bar_IOS.json in Resources */ = {isa = PBXBuildFile; fileRef = BF4568732886F29F00142983 /* Bar_IOS.json */; };
 		BF56AB73288F8BB3008D7362 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56AB72288F8BB3008D7362 /* PageViewController.swift */; };
 		BF56AB75288F8F7A008D7362 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56AB74288F8F7A008D7362 /* FeatureCard.swift */; };
-		BF9141F32891272A0047F328 /* Bar_IOS_final.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9141F22891272A0047F328 /* Bar_IOS_final.json */; };
 		BFA4FD232890163700D175FE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4FD222890163700D175FE /* PageView.swift */; };
 		BFCC17D228938A8100618759 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCC17D128938A8100618759 /* SplashView.swift */; };
+		BFCF9496289CBD9A0035ADCE /* Bar_IOS_final.json in Resources */ = {isa = PBXBuildFile; fileRef = BFCF9495289CBD9A0035ADCE /* Bar_IOS_final.json */; };
 		BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */; };
 		BFE1B8932886B0690006B8F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8922886B0690006B8F2 /* ContentView.swift */; };
 		BFE1B8952886B06A0006B8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE1B8942886B06A0006B8F2 /* Assets.xcassets */; };
@@ -22,7 +21,7 @@
 		BFE1B8B72886B1960006B8F2 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8B62886B1960006B8F2 /* Bar.swift */; };
 		BFE1B8B92886B2920006B8F2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8B82886B2920006B8F2 /* ModelData.swift */; };
 		BFE1B8BC2886B2C10006B8F2 /* BarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8BB2886B2C10006B8F2 /* BarRow.swift */; };
-		BFE1B8BE2886B2E70006B8F2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */; };
+		BFE1B8BE2886B2E70006B8F2 /* TitleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8BD2886B2E70006B8F2 /* TitleImage.swift */; };
 		BFE1B8C02886B33D0006B8F2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1B8BF2886B33D0006B8F2 /* MapView.swift */; };
 		BFE45BFE288A495A00109CBC /* TestFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE45BFD288A495A00109CBC /* TestFunction.swift */; };
 		BFF099AC288D4201009093DA /* BarCategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF099AB288D4201009093DA /* BarCategoryHome.swift */; };
@@ -34,12 +33,11 @@
 /* Begin PBXFileReference section */
 		BF45686B2886E20B00142983 /* BarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarInfo.swift; sourceTree = "<group>"; };
 		BF45686F2886ED6E00142983 /* BarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarList.swift; sourceTree = "<group>"; };
-		BF4568732886F29F00142983 /* Bar_IOS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bar_IOS.json; sourceTree = "<group>"; };
 		BF56AB72288F8BB3008D7362 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		BF56AB74288F8F7A008D7362 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
-		BF9141F22891272A0047F328 /* Bar_IOS_final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Bar_IOS_final.json; path = ../../../../../Downloads/Bar_IOS_final.json; sourceTree = "<group>"; };
 		BFA4FD222890163700D175FE /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		BFCC17D128938A8100618759 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BFCF9495289CBD9A0035ADCE /* Bar_IOS_final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bar_IOS_final.json; sourceTree = "<group>"; };
 		BFE1B88D2886B0690006B8F2 /* Dreamy Paradise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dreamy Paradise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamy_ParadiseApp.swift; sourceTree = "<group>"; };
 		BFE1B8922886B0690006B8F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +46,7 @@
 		BFE1B8B62886B1960006B8F2 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		BFE1B8B82886B2920006B8F2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BFE1B8BB2886B2C10006B8F2 /* BarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarRow.swift; sourceTree = "<group>"; };
-		BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		BFE1B8BD2886B2E70006B8F2 /* TitleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImage.swift; sourceTree = "<group>"; };
 		BFE1B8BF2886B33D0006B8F2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BFE45BFD288A495A00109CBC /* TestFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFunction.swift; sourceTree = "<group>"; };
 		BFF099AB288D4201009093DA /* BarCategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCategoryHome.swift; sourceTree = "<group>"; };
@@ -78,6 +76,14 @@
 			path = PageView;
 			sourceTree = "<group>";
 		};
+		BFCF9490289CA4120035ADCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF9495289CBD9A0035ADCE /* Bar_IOS_final.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BFE1B8842886B0690006B8F2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +103,7 @@
 		BFE1B88F2886B0690006B8F2 /* Dreamy Paradise */ = {
 			isa = PBXGroup;
 			children = (
-				BFE1B8C12886B3820006B8F2 /* Resources */,
+				BFCF9490289CA4120035ADCE /* Resources */,
 				BFE1B8BA2886B2A10006B8F2 /* View */,
 				BFE1B8B52886B1810006B8F2 /* Model */,
 				BFE1B8902886B0690006B8F2 /* Dreamy_ParadiseApp.swift */,
@@ -137,15 +143,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BFE1B8C12886B3820006B8F2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BF9141F22891272A0047F328 /* Bar_IOS_final.json */,
-				BF4568732886F29F00142983 /* Bar_IOS.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		BFF099AA288D41D6009093DA /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +166,7 @@
 		BFF7DB43288CFAFC0090CA4A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BFE1B8BD2886B2E70006B8F2 /* CircleImage.swift */,
+				BFE1B8BD2886B2E70006B8F2 /* TitleImage.swift */,
 				BFE1B8BF2886B33D0006B8F2 /* MapView.swift */,
 				BFF7DB40288CFA070090CA4A /* FavoriteButton.swift */,
 				BFCC17D128938A8100618759 /* SplashView.swift */,
@@ -237,8 +234,7 @@
 			files = (
 				BFE1B8982886B06A0006B8F2 /* Preview Assets.xcassets in Resources */,
 				BFE1B8952886B06A0006B8F2 /* Assets.xcassets in Resources */,
-				BF9141F32891272A0047F328 /* Bar_IOS_final.json in Resources */,
-				BF4568742886F29F00142983 /* Bar_IOS.json in Resources */,
+				BFCF9496289CBD9A0035ADCE /* Bar_IOS_final.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +258,7 @@
 				BFE1B8B72886B1960006B8F2 /* Bar.swift in Sources */,
 				BFE1B8912886B0690006B8F2 /* Dreamy_ParadiseApp.swift in Sources */,
 				BF4568702886ED6E00142983 /* BarList.swift in Sources */,
-				BFE1B8BE2886B2E70006B8F2 /* CircleImage.swift in Sources */,
+				BFE1B8BE2886B2E70006B8F2 /* TitleImage.swift in Sources */,
 				BFF099B0288D468F009093DA /* TypeItem.swift in Sources */,
 				BF56AB75288F8F7A008D7362 /* FeatureCard.swift in Sources */,
 				BF56AB73288F8BB3008D7362 /* PageViewController.swift in Sources */,

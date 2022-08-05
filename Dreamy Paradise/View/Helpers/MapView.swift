@@ -10,22 +10,32 @@
  - Apple Developer
  - Tutorial from IOS Development course.
  */
+
 import SwiftUI
 import MapKit
 
-let zoomLevel = 0.0001
+let zoomLevel = 0.001
 struct MapView: View {
+    
+    // declare variables
     var bar: Bar
     @State private var region = MKCoordinateRegion()
     
     var body: some View {
-        Map(coordinateRegion: $region)
-            .onAppear {
-                setRegion(bar.locationCoordinate)
-            }.ignoresSafeArea( edges: .top)
+        Map(coordinateRegion: $region, annotationItems: [bar], annotationContent: {
+            // declare annotations
+            bar in
+            MapMarker(coordinate: bar.locationCoordinate,
+                      tint: Color.green)
+        })
+        .onAppear {
+            // set region
+            setRegion(bar.locationCoordinate)
+        }
         
     }
     
+    // set region function
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,
@@ -36,7 +46,7 @@ struct MapView: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(bar: ModelData().bars[10])
+        MapView(bar: ModelData().bars[2])
     }
 }
 

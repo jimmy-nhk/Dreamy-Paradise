@@ -1,9 +1,15 @@
-//
-//  BarCategory.swift
-//  Dreamy Paradise
-//
-//  Created by Jimmy on 24/07/2022.
-//
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 2
+ Author: Nguyen Hoang Khang
+ ID: s3802040
+ Created  date:  18/07/2022
+ Acknowledgement: Acknowledge the resources that you use here.
+ - Apple Developer
+ - Tutorial from IOS Development course.
+ */
 
 import SwiftUI
 
@@ -13,13 +19,15 @@ struct BarCategoryHome: View {
     
     var body: some View {
         
-    
+    // use navigation view to navigate
         NavigationView{
             List {
+                // page view component
                 PageView(pages: ModelData().featuredImageTypeDict.map { FeatureCard(imageFeature: $0.image, typeName: $0.typeName) })
                     .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
                 
+                // each type
                 ForEach(modelData.types.keys.sorted(), id: \.self) { key in
                     TypeRow(typeName: key, items: modelData.types[key]!)
                         .listRowInsets(EdgeInsets())
@@ -28,9 +36,7 @@ struct BarCategoryHome: View {
                 
             }.navigationTitle("Featured")
                 .listStyle(PlainListStyle())
-            
         }
-        
         
     }
 }

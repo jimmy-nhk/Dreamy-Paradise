@@ -17,12 +17,10 @@ import CoreLocation
 
 struct Bar: Hashable, Codable, Identifiable{
     
-    //    var id = UUID()
     var id : Int
     var name: String
     var description: String
     var address: String
-    //    var type: String
     var timeOpen: String
     var timeClosed: String
     var latitude: String
@@ -45,23 +43,16 @@ struct Bar: Hashable, Codable, Identifiable{
     }
     
     var latitudeConverted: Double{
-        return(LatLongConvert(stringNeedConvert: latitude, index: 2))
+        return(LatLongConvert(stringNeedConvert: latitude))
     }
     
     var longitudeConverted: Double{
-        return(LatLongConvert(stringNeedConvert: longitude, index: 3))
+        return(LatLongConvert(stringNeedConvert: longitude))
     }
     
-    func LatLongConvert(stringNeedConvert: String, index: Int) -> Double {
-        let dotChar: Character = "."
-        
-        let latArr = latitude.components(separatedBy: ".")
-        
-        var joinedLat = latArr.joined(separator: "")
-        let i = joinedLat.index(joinedLat.startIndex, offsetBy: index)
-        joinedLat.insert(dotChar, at: i)
-        let result = Double(joinedLat)
-        
+    // convert to doulbe
+    func LatLongConvert(stringNeedConvert: String) -> Double {
+        let result = Double(stringNeedConvert)
         if  result != nil {
             return result ?? 0.0
         }else{
@@ -70,7 +61,6 @@ struct Bar: Hashable, Codable, Identifiable{
     }
     
     var locationCoordinate: CLLocationCoordinate2D {
-        
         CLLocationCoordinate2D(
             latitude: latitudeConverted,longitude: longitudeConverted)
     }

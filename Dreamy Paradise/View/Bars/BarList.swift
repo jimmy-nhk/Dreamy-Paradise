@@ -2,13 +2,14 @@
  RMIT University Vietnam
  Course: COSC2659 iOS Development
  Semester: 2022B
- Assessment: Assignment 2
+ Assessment: Assignment 1
  Author: Nguyen Hoang Khang
  ID: s3802040
  Created  date:  19/07/2022
  Acknowledgement: Acknowledge the resources that you use here.
  - Apple Developer
  - Tutorial from IOS Development course.
+ - https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-a-search-bar-to-filter-your-data
  */
 
 import SwiftUI
@@ -24,9 +25,20 @@ struct BarList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavouritesOnly = false
     @State private var selectedSort: SortCategory = .defaultCategory
+    @State private var searchValue = ""
     
     var filteredBars: [Bar] {
-        modelData.bars.filter{bar in (!showFavouritesOnly || bar.isFavourite)}
+        modelData.bars.filter{ (bar) in
+            if (!showFavouritesOnly || bar.isFavourite ) {
+                if searchValue == ""{
+                    return true
+                }
+                if bar.name.contains(searchValue){
+                    return true
+                }
+            }
+            return false
+        }
     }
     
     var sortedBars: [Bar] {
@@ -61,7 +73,6 @@ struct BarList: View {
                         Text("Favourites only")
                     })
                     
-                    
                     Picker("Sort by", selection: $selectedSort) {
                         Text("Default").tag(SortCategory.defaultCategory)
                         Text("Name").tag(SortCategory.nameCategory)
@@ -69,11 +80,11 @@ struct BarList: View {
                         Text("Time Closes").tag(SortCategory.timeClosedCategory)
                     }.pickerStyle(.segmented)
                 }.padding([.horizontal])
-        
-
+                
+                
                 
                 List {
-
+                    
                     
                     
                     ForEach(sortedBars) {
@@ -86,11 +97,14 @@ struct BarList: View {
                     }
                 }.navigationTitle("Dreamy Places 🥴")
             }
+            .searchable(text: $searchValue, prompt: "Find your places")
+            .navigationBarHidden(false)
+            .navigationBarTitleDisplayMode(.inline)
             
-
+            
             
         } .listStyle(PlainListStyle())
-
+        
         
         
     }
