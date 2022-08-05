@@ -1,6 +1,5 @@
 # Dreamy-Paradise
 
-1. Introduce the app. Why do you choose that topic? Any motivation or inspiration? Explain about what the app about? How do we use it?
 I am a dreamy person who like to immerse myself in beautiful places in Sai Gon. The app is used to store the list of popular bars around the city. It contains the name, address, the time (opens / closes), the description and the bar’s coordinator on the map to that bar as well. Last year, it had been tough since the lockdown was established due to Covid-19. Everyone stayed at home to not spread out the disease. Therefore, I want to make this app as a list of well-known places to chill out so people can drop by during their free time in the evening. To use the app, the user must understand the views of the app.
 
 App icon is as follows:
@@ -17,7 +16,6 @@ In the Home Page, there is a tab component to switch between the Home Page and t
 The List Page contains all the loaded places.
 The Information Page contains all the information of the place. In this page, there is also a button to check for the location of the place on the map.
    
-   2. What are the main features and extra creative features you have done? For each features, explain briefly how you do it?
 
 <br>The main features of the app are:
 * List Page contains name and image of bar. 
@@ -43,10 +41,8 @@ better visualization.
 * Sort: Sort based on name, time opens, time closes.
 * Home Page: contains lots of group of bars and to make its visualization
 better.
-3. Links to the simulator
 
-https://drive.google.com/drive/folders/1mZ2gbDlESeJIjuum68eL7BShNCmye4oO?usp =sharing
+Links to the simulator: https://drive.google.com/drive/folders/1mZ2gbDlESeJIjuum68eL7BShNCmye4oO?usp =sharing
 
-4. Any potential idea for future features you want to build for this app later on.
 
 In the future features, I want to build this app like Foody but it is specialized for only that kind of places. It will contain menu and the number of people in the bar. Most importantly, it will allow the booking between the user and the places to be made.
