@@ -26,16 +26,16 @@ struct BarInfo: View {
             
             VStack {
                 
+                // Title Image
                 TitleImage(image: bar.image)
                 
-                
+                // VStack
                 VStack(alignment: .leading){
                     
                     // Title
                     HStack {
                         Text(bar.name)
                             .font(.title)
-                        
                         FavoriteButton(isSet: $modelData.bars[barIndex].isFavourite)
                     }
                     
@@ -78,7 +78,7 @@ struct BarInfo: View {
                     // Divider distinguish the title and detailed description
                     Divider().frame(height: 10)
                     
-                    
+                    // Description
                     Text("Description")
                         .font(.title2)
                     
@@ -111,7 +111,6 @@ struct BarInfo: View {
                         
                     }
                     
-                    
                 }
                 .padding(15.0)
                 Spacer()
@@ -128,14 +127,9 @@ struct BarInfo_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        
         Group {
             BarInfo(bar: modelData.bars[0])
                 .environmentObject(modelData)
         }
-        
-        
-//                .previewLayout(PreviewLayout.sizeThatFits)
-        
     }
 }

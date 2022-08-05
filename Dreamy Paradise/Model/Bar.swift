@@ -17,6 +17,7 @@ import CoreLocation
 
 struct Bar: Hashable, Codable, Identifiable{
     
+    // declare variables
     var id : Int
     var name: String
     var description: String
@@ -30,6 +31,7 @@ struct Bar: Hashable, Codable, Identifiable{
     var isFavourite: Bool
     var isFeatured: Bool
     
+    // declare category
     var type: Category
     enum Category: String, CaseIterable, Codable {
         case bar = "Bar"

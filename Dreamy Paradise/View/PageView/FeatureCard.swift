@@ -25,6 +25,7 @@ struct FeatureCard: View {
             .resizable()
             .aspectRatio(3 / 2, contentMode: .fit)
             .overlay {
+                // overlay
                 TextOverlay(typeName: typeName)
             }
         

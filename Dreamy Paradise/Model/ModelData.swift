@@ -32,9 +32,7 @@ final class ModelData: ObservableObject {
     var featuredImageTypeDict: [FeatureObject] {
         
         let arrayBarTypes = types.keys
-        
         var arrayImage: [FeatureObject] = []
-        
         
         for barType in (arrayBarTypes) {
             let featureObject = FeatureObject(imageType: barType + " Feature", typeName: barType, typeDescription: barType)

@@ -18,12 +18,14 @@ struct BarRow: View {
     
     var body: some View {
         HStack {
+            // image
             bar.image
                 .resizable()
                 .frame(width: 50, height: 50)
             Text(bar.name)
             Spacer()
             
+            // favorite
             if bar.isFavourite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
